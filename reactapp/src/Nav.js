@@ -19,14 +19,14 @@ function Nav() {
         <Menu.Item key="test">
           <Link to="/screenmyarticles">
             <Icon type="read" />
-            My Articles
+            Mes articles
           </Link>
         </Menu.Item>
 
         <Menu.Item key="app">
           <Link to="/"> 
             <Icon type="logout" />
-            Logout
+            Déconnexion
           </Link>
         </Menu.Item>
 

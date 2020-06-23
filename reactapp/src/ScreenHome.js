@@ -62,14 +62,14 @@ function ScreenHome(props) {
 
           <div className="Sign">
                   
-                  <Input onChange={(e) => setSignInEmail(e.target.value)} value={signInEmail} className="Login-input" placeholder="arthur@lacapsule.com" />
+                  <Input onChange={(e) => setSignInEmail(e.target.value)} value={signInEmail} className="Login-input" placeholder="invite@mail.com" />
 
-                  <Input.Password onChange={(e) => setSignInPassword(e.target.value)} value={signInPassword} className="Login-input" placeholder="password" />
+                  <Input.Password onChange={(e) => setSignInPassword(e.target.value)} value={signInPassword} className="Login-input" placeholder="invite" />
 
                    {listErrorsSignIn}
             
 
-            <Button onClick={() => handleSubmitSignIn()} style={{width:'80px'}} type="primary">Sign-in</Button>
+            <Button onClick={() => handleSubmitSignIn()} type="primary">Se connecter</Button>
 
           </div>
 
@@ -77,16 +77,16 @@ function ScreenHome(props) {
 
           <div className="Sign">
                   
-                  <Input onChange={(e) => setSignUpName(e.target.value)} value={signUpName} className="Login-input" placeholder="Arthur G" />
+                  <Input onChange={(e) => setSignUpName(e.target.value)} value={signUpName} className="Login-input" placeholder="Nom" />
 
-                  <Input onChange={(e) => setSignUpEmail(e.target.value)} value={signUpEmail} className="Login-input" placeholder="arthur@gmail.com" />
+                  <Input onChange={(e) => setSignUpEmail(e.target.value)} value={signUpEmail} className="Login-input" placeholder="Email" />
 
-                  <Input.Password onChange={(e) => setSignUpPassword(e.target.value)} value={signUpPassword} className="Login-input" placeholder="password" />
+                  <Input.Password onChange={(e) => setSignUpPassword(e.target.value)} value={signUpPassword} className="Login-input" placeholder="Mot de passe" />
 
                   {listErrorsSignUp}
             
 
-            <Button onClick={() => handleSubmitSignUp()} style={{width:'80px'}} type="primary">Sign-up</Button>
+            <Button onClick={() => handleSubmitSignUp()} type="primary">Créer son compte</Button>
 
           </div>
 
